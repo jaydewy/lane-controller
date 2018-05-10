@@ -1,5 +1,7 @@
 #define PINSENSORREG 8
 #define PINBRAKEREG 9
+#define PBR_CLK 7
+#define PBR_LATCH 6
 
 #include <Ethernet.h>
 
@@ -14,7 +16,15 @@ void loop() {
 
 }
 
-bool pinStates[5];
+bool pinStates[5]; // Pins are defined below:
+
+/*
+ * PIN #
+ * 0   1   2   3   4
+ * 2               2
+ *     3       3
+ *         5
+ */
 
 // Checks the state of the pins after a ball is detected and stores them in the pinStates array.
 // TRUE (1) means the pin is standing. FALSE (0) means the pin has fallen.
