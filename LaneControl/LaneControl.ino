@@ -33,7 +33,9 @@ bool pinStates[5]; // Pins are defined below:
 // Checks the state of the pins after a ball is detected and stores them in the pinStates array.
 // TRUE (1) means the pin is standing. FALSE (0) means the pin has fallen.
 void readPinStates() {
-  
+  for(int i = 0, i < 5, i++) {
+    
+  }
 }
 
 // Resets all of the pins and sets the pinStates array to [1,1,1,1,1]
